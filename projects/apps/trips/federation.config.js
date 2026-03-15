@@ -1,11 +1,11 @@
 const { withNativeFederation, shareAll } = require('@angular-architects/native-federation/config');
 
 module.exports = withNativeFederation({
-  name: 'planner',
+  name: 'trips',
 
   exposes: {
-    // './Component': './projects/planner/src/app/app.ts',
-    './routes': './projects/planner/src/app/app.routes.ts',
+    // './Component': './projects/trips/src/app/app.ts',
+    './routes': './projects/apps/trips/src/app/app.routes.ts',
   },
 
   shared: {
