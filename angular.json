@@ -276,8 +276,8 @@
     },
     "shared": {
       "projectType": "library",
-      "root": "projects/apps/shared",
-      "sourceRoot": "projects/apps/shared",
+      "root": "projects/shared",
+      "sourceRoot": "projects/shared",
       "prefix": "app",
       "architect": {}
     }
