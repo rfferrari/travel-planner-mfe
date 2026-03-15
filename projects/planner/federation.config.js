@@ -4,7 +4,8 @@ module.exports = withNativeFederation({
   name: 'planner',
 
   exposes: {
-    './Component': './projects/planner/src/app/app.ts',
+    // './Component': './projects/planner/src/app/app.ts',
+    './routes': './projects/planner/src/app/app.routes.ts',
   },
 
   shared: {
