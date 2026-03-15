@@ -1,0 +1,4 @@
+{
+  "trips": "http://localhost:4200/remoteEntry.json",
+  "planner": "http://localhost:4200/remoteEntry.json"
+}
