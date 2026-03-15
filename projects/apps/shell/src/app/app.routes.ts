@@ -10,11 +10,11 @@ export const routes: Routes = [
   {
     path: 'trips',
     loadChildren: () =>
-      loadRemoteModule('trips', './routes').then((m) => m.APP_ROUTES),
+      loadRemoteModule('trips', './routes').then((m) => m.APP_ROUTES ?? m.routes),
   },
   {
     path: 'planner',
     loadChildren: () =>
-      loadRemoteModule('planner', './routes').then((m) => m.APP_ROUTES),
+      loadRemoteModule('planner', './routes').then((m) => m.APP_ROUTES ?? m.routes),
   }
 ];

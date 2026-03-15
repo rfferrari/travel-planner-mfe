@@ -1,1 +1,19 @@
-<p>navbar works!</p>
+<header class="main-header">
+  <div class="container-wrapper">
+    <div class="brand">
+      <span class="brand-name">Travel Planner</span>
+    </div>
+
+    <div class="user-actions">
+      <!-- <div class="user-info" *ngIf="user() as u">
+        <span class="email">{{ u.name }}</span>
+        <span class="role">{{ u.role }}</span>
+      </div> -->
+      <div class="v-divider"></div>
+      <button class="btn-logout" (click)="logout()">
+        <mat-icon>logout</mat-icon>
+        <span>Sair</span>
+      </button>
+    </div>
+  </div>
+</header>
