@@ -10,8 +10,8 @@
     "shell": {
       "projectType": "application",
       "schematics": {},
-      "root": "projects/shell",
-      "sourceRoot": "projects/shell/src",
+      "root": "projects/apps/shell",
+      "sourceRoot": "projects/apps/shell/src",
       "prefix": "app",
       "architect": {
         "build": {
@@ -44,15 +44,15 @@
         "esbuild": {
           "builder": "@angular/build:application",
           "options": {
-            "browser": "projects/shell/src/main.ts",
-            "tsConfig": "projects/shell/tsconfig.app.json",
+            "browser": "projects/apps/shell/src/main.ts",
+            "tsConfig": "projects/apps/shell/tsconfig.app.json",
             "assets": [
               {
                 "glob": "**/*",
-                "input": "projects/shell/public"
+                "input": "projects/apps/shell/public"
               }
             ],
-            "styles": ["projects/shell/src/styles.css"],
+            "styles": ["projects/apps/shell/src/styles.css"],
             "polyfills": ["es-module-shims"]
           },
           "configurations": {
@@ -99,8 +99,8 @@
     "trips": {
       "projectType": "application",
       "schematics": {},
-      "root": "projects/trips",
-      "sourceRoot": "projects/trips/src",
+      "root": "projects/apps/trips",
+      "sourceRoot": "projects/apps/trips/src",
       "prefix": "app",
       "architect": {
         "build": {
@@ -133,15 +133,15 @@
         "esbuild": {
           "builder": "@angular/build:application",
           "options": {
-            "browser": "projects/trips/src/main.ts",
-            "tsConfig": "projects/trips/tsconfig.app.json",
+            "browser": "projects/apps/trips/src/main.ts",
+            "tsConfig": "projects/apps/trips/tsconfig.app.json",
             "assets": [
               {
                 "glob": "**/*",
-                "input": "projects/trips/public"
+                "input": "projects/apps/trips/public"
               }
             ],
-            "styles": ["projects/trips/src/styles.css"],
+            "styles": ["projects/apps/trips/src/styles.css"],
             "polyfills": ["es-module-shims"]
           },
           "configurations": {
@@ -188,8 +188,8 @@
     "planner": {
       "projectType": "application",
       "schematics": {},
-      "root": "projects/planner",
-      "sourceRoot": "projects/planner/src",
+      "root": "projects/apps/planner",
+      "sourceRoot": "projects/apps/planner/src",
       "prefix": "app",
       "architect": {
         "build": {
@@ -222,15 +222,15 @@
         "esbuild": {
           "builder": "@angular/build:application",
           "options": {
-            "browser": "projects/planner/src/main.ts",
-            "tsConfig": "projects/planner/tsconfig.app.json",
+            "browser": "projects/apps/planner/src/main.ts",
+            "tsConfig": "projects/apps/planner/tsconfig.app.json",
             "assets": [
               {
                 "glob": "**/*",
-                "input": "projects/planner/public"
+                "input": "projects/apps/planner/public"
               }
             ],
-            "styles": ["projects/planner/src/styles.css"],
+            "styles": ["projects/apps/planner/src/styles.css"],
             "polyfills": ["es-module-shims"]
           },
           "configurations": {
@@ -273,6 +273,13 @@
           }
         }
       }
+    },
+    "shared": {
+      "projectType": "library",
+      "root": "projects/apps/shared",
+      "sourceRoot": "projects/apps/shared",
+      "prefix": "app",
+      "architect": {}
     }
   }
 }
